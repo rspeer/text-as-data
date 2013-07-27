@@ -26,7 +26,7 @@ conceptnet_lookup('/assoc/list/en/good@1,bad@-1')
 
 # <codecell>
 
-conceptnet_lookup('/assoc/list/en/good@1,bad@-1?filter=/c/en')
+conceptnet_lookup('/assoc/list/en/good@-1,bad@1?filter=/c/en')
 
 # <codecell>
 
