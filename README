@@ -1,6 +1,10 @@
 This repository contains the code accompanying my PyData 2013 talk, "How does
 text become data?".
 
+Here you can see HTML pages that represent what I showed on the screen. In the
+src/ directory you'll find the Python code (with comments from IPython that you
+can disregard), and the IPython notebook files themselves.
+
 The code is meant to be run interactively in an IPython Notebook. The .py
 versions of the files, though, will run in ordinary Python, and just have
 oddly-formatted comments from IPython that you can disregard.
