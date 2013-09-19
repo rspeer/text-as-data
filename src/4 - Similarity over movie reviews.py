@@ -46,6 +46,13 @@ similarity = similarities.MatrixSimilarity(lsi[corpus])
 
 # <codecell>
 
+# Here's a way to get a similarity vector.
+def doc_similarities(doc):
+    bag_of_words = dictionary.doc2bow(doc)
+    return similarity[lsi[bag_of_words]]
+
+# <codecell>
+
 # A useful function for looking at what's going on.
 #
 # It takes in a vector of how similar N things are to some input.
@@ -58,13 +65,6 @@ def show_similar(similarities, display_func):
 
 # <codecell>
 
-# Here's a way to get a similarity vector.
-def doc_similarities(doc):
-    bag_of_words = dictionary.doc2bow(doc)
-    return similarity[lsi[bag_of_words]]
-
-# <codecell>
-
 # And here's the display_func we'll need.
 def brief_document(index):
     doc = documents[index]
@@ -73,23 +73,6 @@ def brief_document(index):
 # <codecell>
 
 show_similar(doc_similarities(documents[1]), brief_document)
-
-# <codecell>
-
-def term_similarities(term):
-    return lsi.projection.u.dot(lsi.projection.u[dictionary.token2id[term]])
-
-# <codecell>
-
-show_similar(term_similarities('boat'), lambda x: dictionary.id2token[x])
-
-# <codecell>
-
-show_similar(term_similarities('alien'), lambda x: dictionary.id2token[x])
-
-# <codecell>
-
-show_similar(term_similarities('good'), lambda x: dictionary.id2token[x])
 
 # <codecell>
 

@@ -23,7 +23,9 @@ random.shuffle(documents)
 
 # <codecell>
 
-documents[0]
+reviewtext, rating = documents[0]
+print reviewtext
+print rating
 
 # <codecell>
 
@@ -48,6 +50,10 @@ classifier.fit(train_vectors, train_targets)
 
 # <codecell>
 
+classifier.score(test_vectors, test_targets)
+
+# <codecell>
+
 # A helper function to see which features affect the classification the most
 def show_most_informative_features(vectorizer, classifier, n=10):
     neg = classifier.feature_log_prob_[0]
@@ -66,10 +72,6 @@ def show_most_informative_features(vectorizer, classifier, n=10):
 # <codecell>
 
 show_most_informative_features(vectorizer, classifier)
-
-# <codecell>
-
-classifier.score(test_vectors, test_targets)
 
 # <codecell>
 

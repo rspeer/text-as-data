@@ -8,7 +8,7 @@ import json
 
 # <codecell>
 
-BASE = 'http://conceptnet5.media.mit.edu/data/5.1'
+BASE = 'http://conceptnet5.media.mit.edu/data/5.2'
 
 # <codecell>
 
@@ -26,12 +26,13 @@ conceptnet_lookup('/assoc/list/en/good@1,bad@-1')
 
 # <codecell>
 
+conceptnet_lookup('/assoc/list/en/good@1,bad@-1?filter=/c/en')
+
+# <codecell>
+
 conceptnet_lookup('/assoc/list/en/good@-1,bad@1?filter=/c/en')
 
 # <codecell>
 
-conceptnet_lookup('/assoc/c/en/ship?filter=/c/en')
-
-# <codecell>
-
+conceptnet_lookup('/assoc/c/en/travel?filter=/c/en')
 
