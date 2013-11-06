@@ -1,9 +1,5 @@
 This repository contains the code accompanying my talk, "How does text become
-data?", presented in various forms at PyData 2013 and Strange Loop 2013.
-
-To see the code and its output as it appeared during the talk, you can click
-on any of the .md files on GitHub. Or, if you've downloaded this repository,
-you can look at the .html files.
+data?".
 
 The "src" directory contains the actual code. The .ipynb files are the
 interactive IPython notebooks.  The .py versions of the files will run in

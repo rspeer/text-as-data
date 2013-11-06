@@ -36,3 +36,6 @@ conceptnet_lookup('/assoc/list/en/good@-1,bad@1?filter=/c/en')
 
 conceptnet_lookup('/assoc/c/en/travel?filter=/c/en')
 
+# <codecell>
+
+
