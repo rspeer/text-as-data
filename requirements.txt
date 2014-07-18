@@ -1,0 +1,14 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+PyStemmer==1.3.0
+PyYAML==3.11
+backports.ssl-match-hostname==3.4.0.2
+certifi==14.05.14
+ftfy==3.2.0
+gnureadline==6.3.3
+ipython==2.1.0
+metanl==0.5.6
+nltk==2.0.4
+pyzmq==14.3.1
+tornado==4.0
+wsgiref==0.1.2
