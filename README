@@ -5,3 +5,15 @@ The "src" directory contains the actual code. The .ipynb files are the
 interactive IPython notebooks.  The .py versions of the files will run in
 ordinary Python, and just have oddly-formatted comments from IPython that you
 can disregard.
+
+Running the code
+================
+1. Use virtualenv:
+   virtualenv-2.7 venv
+   . venv/bin/activate
+2. Install the required python libraries:
+  pip install -r requirements.txt
+3. Download the NLTK input data:
+  ipython
+  import nltk
+  nltk.download()
